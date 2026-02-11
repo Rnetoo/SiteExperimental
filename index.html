@@ -74,6 +74,8 @@
                 </tbody>
             </table>
 
+
+
             <aside>
                 <h3>Habilidades</h3>
                 <ul>
@@ -137,6 +139,36 @@
                     </label>
         </footer>
 
+
+
+        <section>
+            <h2>Escolha de Matérias</h2>
+
+            <form action="">
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" name="nome" required> <br>
+
+                <label for="materias">Matérias: </label>
+                <select id="materias" name="materias" multiple required>
+                    <option value="matematica">Matemática</option>
+                    <option value="portugues">Português</option>
+                    <option value="biologia">Biologia</option>
+                    <option value="historia">História</option>
+                    <option value="geografia">Geografia</option>
+                </select> <br>
+
+                <label for="nivelDeEscolaridade">Nível de Escolaridade: </label>
+                <select id="nivelDeEscolaridade" name="nivelDeEscolaridade" required>
+                    <option value="superior">Superior</option>
+                    <option value="mestrado">Mestrado</option>
+                    <option value="doutorado">Doutorado</option>
+                </select> <br>
+
+                <label for="descricao">Descrição Sobre Si Mesmo: </label>
+                <textarea id="descricao" name="descricao" rows="4" cols="50" required></textarea> <br>
+
+                <input type="submit" value="Enviar">
+            </form>
 
 </body>
 
