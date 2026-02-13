@@ -9,180 +9,158 @@
 
 <body>
     <header>
-
         <h1>Bem-vindo ao meu site</h1>
         <nav>
             <ul>
-                <li><a href="#Início">Início</a></li>
-                <li><a href="#Projeto">Sobre</a></li>
+                <li><a href="#Inicio">Início</a></li>
+                <li><a href="#Sobre">Sobre</a></li>
                 <li><a href="#Contato">Contato</a></li>
-                <li><a href="#Serviços">Serviços</a></li>
+                <li><a href="#Servicos">Serviços</a></li>
                 <li><a href="https://gtbicycles.com/" target="_blank">GT Bikes - Parceiros</a></li>
             </ul>
         </nav>
-
     </header>
 
-    <section id="Início">
+    <section id="Inicio">
         <h2>Início</h2>
-
-        <img src="https://gtbicycles.com/collections/mountain-bikes/products/fury-carbon-elite"
-            alt="Bicicleta de montanha GT exibida de perfil sobre fundo branco neutro, mostrando quadro, suspensão dianteira e pneus com cravos; sem pessoas; sem texto legível na imagem; tom neutro e funcional, foco no produto."
-            width="200">
+        <!-- Substitua a URL por uma imagem real -->
+        <img src="https://via.placeholder.com/400x300?text=GT+Bike" 
+             alt="Bicicleta de montanha GT" width="400">
 
         <article>
-
             <p>Olá! Meu nome é Rômulo, sou um desenvolvedor web apaixonado por criar experiências digitais incríveis.
                 Tenho experiência em HTML, CSS, JavaScript e várias outras tecnologias de desenvolvimento web. Adoro
                 aprender coisas novas e estou sempre em busca de desafios para aprimorar minhas habilidades.</p>
-
         </article>
+    </section>
 
-        <section id="Habilidades">
+    <section id="Habilidades">
+        <h2>Habilidades e Tecnologias</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Habilidade</th>
+                    <th>Nível de Proficiência</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>Avançado</td>
+                    <td>Experiência em criação de layouts responsivos e acessíveis.</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Avançado</td>
+                    <td>Habilidade em estilização de páginas web e criação de animações.</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Intermediário</td>
+                    <td>Conhecimento em manipulação do DOM e desenvolvimento de funcionalidades interativas.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-            <h2>Habilidades e Tecnologias</h2>
+    <aside>
+        <h3>Resumo das Habilidades</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </aside>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>Habilidade</th>
-                        <th>Nível de Proficiência</th>
-                        <th>Descrição</th>
+    <section id="Sobre">
+        <h2>Sobre</h2>
+        <article>
+            <h3>Portfólio</h3>
+            <p>Este é um projeto em desenvolvimento para a prática da escrita em HTML.</p>
+        </article>
+    </section>
 
-                    </tr>
-                </thead>
+    <section id="Contato">
+        <h2>Contato</h2>
+        <address>
+            <p>Endereço: Rua Exemplo, 123 - Cidade, País</p>
+            <p>Email: <a href="mailto:romulo@example.com">romulo@example.com</a></p>
+            <p>Telefone: <a href="tel:+5549999086607">+55 49 99908 6607</a></p>
+        </address>
 
-                <tbody>
-                    <tr>
-                        <td>HTML</td>
-                        <td>Avançado</td>
-                        <td>Experiência em criação de layouts responsivos e acessíveis.</td>
-                    </tr>
+        <form action="" method="POST">
+            <label for="contato-nome">Nome: </label>
+            <input type="text" id="contato-nome" name="nome" required> <br>
 
-                    <tr>
-                        <td>CSS</td>
-                        <td>Avançado</td>
-                        <td>Habilidade em estilização de páginas web e criação de animações.</td>
-                    </tr>
+            <label for="contato-email">Email: </label>
+            <input type="email" id="contato-email" name="email" required> <br>
 
+            <label for="contato-telefone">Telefone: </label>
+            <input type="tel" id="contato-telefone" name="telefone" required> <br>
 
-                    <tr>
-                        <td>JavaScript</td>
-                        <td>Intermediário</td>
-                        <td>Conhecimento em manipulação do DOM e desenvolvimento de funcionalidades interativas.</td>
-                    </tr>
-                </tbody>
-            </table>
+            <label for="assunto">Assunto: </label>
+            <select name="assunto" id="assunto">
+                <option value="orcamento">Solicitar orçamento</option>
+                <option value="duvidas">Tirar dúvidas</option>
+                <option value="outros">Outros</option>
+            </select> <br>
 
+            <label for="mensagem">Mensagem: </label>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea> <br>
 
+            <input type="checkbox" id="inscricao" name="inscricao">
+            <label for="inscricao">Deseja receber minha newsletter? Fique por dentro.</label>
+            <br>
 
-            <aside>
-                <h3>Habilidades</h3>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul>
-            </aside>
+            <input type="submit" value="Enviar Mensagem">
+        </form>
+    </section>
 
-        </section> id="Sobre">
+    <section id="Materias">
+        <h2>Escolha de Matérias</h2>
+        <form action="" method="POST">
+            <label for="mat-nome">Nome: </label>
+            <input type="text" id="mat-nome" name="nome" required> <br>
 
-        <section>
-            <h2>Projetos</h2>
-            <article>
-                <h3>Portifólio</h3>
+            <label for="mat-email">Email: </label>
+            <input type="email" id="mat-email" name="email" required> <br>
 
-                <p>Este é um projeto em desenvolvimento para a prática da escrita em HTML.</p>
+            <label for="mat-telefone">Telefone: </label>
+            <input type="tel" id="mat-telefone" name="telefone" required> <br>
 
-            </article>
-        </section> id="Contato">
+            <input type="radio" id="masculino" name="genero" value="masculino" required>
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="feminino" name="genero" value="feminino" required>
+            <label for="feminino">Feminino</label>
+            <input type="radio" id="outro" name="genero" value="outro" required>
+            <label for="outro">Outro</label> <br>
 
+            <label for="materias">Matérias: </label>
+            <select id="materias" name="materias" multiple required>
+                <option value="matematica">Matemática</option>
+                <option value="portugues">Português</option>
+                <option value="biologia">Biologia</option>
+                <option value="historia">História</option>
+                <option value="geografia">Geografia</option>
+            </select> <br>
 
+            <label for="nivelDeEscolaridade">Nível de Escolaridade: </label>
+            <select id="nivelDeEscolaridade" name="nivelDeEscolaridade" required>
+                <option value="superior">Superior</option>
+                <option value="mestrado">Mestrado</option>
+                <option value="doutorado">Doutorado</option>
+            </select> <br>
 
-        <footer>
-            <p>&copy; 2026 Rômulo. Todos os direitos reservados.</p>
-            <address>
-                <p>Endereço: Rua Exemplo, 123 - Cidade, País</p>
-                <p>Email: <a href="mailto:romulo@example.com">romulo@example.com</a></p>
-                <p>Telefone: <a href="tel:+5549999086606">+55 49 99908 6607</a></p>
+            <label for="descricao">Descrição Sobre Si Mesmo: </label>
+            <textarea id="descricao" name="descricao" rows="4" cols="50" required></textarea> <br>
 
-                <form action="">
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
 
-                    <label for="nome">Nome: </label>
-                    <input type="text" id="nome" name="nome" required> <br>
-
-                    <label for="email">Email: </label>
-                    <input type="email" id="email" name="email" required> <br>
-
-                    <label for="telefone">Telefone</label>
-                    <input type="tel" id="telefone" name="telefone" required> <br>
-
-                    <label for="assunto">Assunto: </label>
-                    <select name="assunto" id="assunto">
-                        <option value="orcamento">Solicitar orçamento</option>
-                        <option value="duvidas">Tirar dúvidas</option>
-                        <option value="outros">Outros</option>
-                    </select> <br>
-
-                    <label for="mensagem">Mensagem: </label>
-                    <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea> <br>
-
-                    <input type="checkbox" id="inscricao" name="inscricao">
-                    <label for="inscricao">Deseja receber minha newsletter? Fique por dentro.</label>
-
-                    <br>
-
-                    <input type="submit" value="Enviar Mensagem">
-
-
-
-                    </label>
-        </footer>
-
-
-
-        <section>
-            <h2>Escolha de Matérias</h2>
-
-            <form action="">
-                <label for="nome">Nome: </label>
-                <input type="text" id="nome" name="nome" required> <br>
-                <label for="email">Email: </label>
-                <input type="email" id="email" name="email" required> <br>
-                <label for="telefone">Telefone</label>
-                <input type="tel" id="telefone" name="telefone" required> <br>
-                <input type="radio" id="masculino" name="genero" value="masculino" required>
-                <label for="masculino">Masculino</label>
-                <input type="radio" id="feminino" name="genero" value="feminino" required>
-                <label for="feminino">Feminino</label>
-                <input type="radio" id="outro" name="genero" value="outro" required>
-                <label for="outro">Outro</label> <br>
-
-
-                <label for="materias">Matérias: </label>
-                <select id="materias" name="materias" multiple required>
-                    <option value="matematica">Matemática</option>
-                    <option value="portugues">Português</option>
-                    <option value="biologia">Biologia</option>
-                    <option value="historia">História</option>
-                    <option value="geografia">Geografia</option>
-                </select> <br>
-
-                <label for="nivelDeEscolaridade">Nível de Escolaridade: </label>
-                <select id="nivelDeEscolaridade" name="nivelDeEscolaridade" required>
-                    <option value="superior">Superior</option>
-                    <option value="mestrado">Mestrado</option>
-                    <option value="doutorado">Doutorado</option>
-                </select> <br>
-
-                <label for="descricao">Descrição Sobre Si Mesmo: </label>
-                <textarea id="descricao" name="descricao" rows="4" cols="200" required></textarea> <br>
-
-                <input type="submit" value="Enviar">
-            </form>
-
-
-
+    <footer>
+        <p>&copy; 2026 Rômulo. Todos os direitos reservados.</p>
+    </footer>
 </body>
-
 </html>
